@@ -18,6 +18,7 @@
     const res = await fetch(clientsUrl, {
       method: "POST",
     });
+    console.log("Result recived", res);
     let newClient = await res.json();
     console.log("New client added", newClient);
     await getClients();
